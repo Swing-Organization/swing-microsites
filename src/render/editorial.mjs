@@ -10,7 +10,7 @@ export function renderEditorial(site,images){
  }));
  const spreads=site.layout.spreads.map((ids,row)=>{const i=site.layout.spreadNumbers[row]-1;const clip=film[`V${String(i+1).padStart(2,'0')}`];return `<div class="spread-band band-${i+1}"><div class="spread spread-${i+1}${clip?' motion-spread':''}">${ids.map((id,j)=>`<figure class="editorial-image image-${j+1}">${picture(id,{sizes:j===1?'(max-width:767px) calc(100vw - 40px), 40vw':'(max-width:767px) calc(100vw - 40px), 30vw'})}</figure>`).join('')}${clip??''}</div></div>`;});
  const opening=`<div class="masthead"><span class="wordmark">Swing</span><span class="collab-cross" aria-hidden="true">×</span><span class="partner-name">John Montgomery</span><span class="sr-only">${e(c.collaboration)}</span></div>
- <div class="cover" data-chapter="intro"><div class="cover-copy"><p class="eyebrow">${e(c.collaboration)}</p><h1 id="campaign-heading">Nothing better than<br> <em>a Sunday tee time.</em></h1><p class="cover-intro">${e(c.intro)}</p><a class="text-link" href="#products">Explore the collection <span aria-hidden="true">↗</span></a></div>
+ <div class="cover" data-chapter="intro"><div class="cover-copy"><p class="eyebrow">${e(c.collaboration)}</p><h1 id="campaign-heading">Callie's test</h1><p class="cover-intro">${e(c.intro)}</p><a class="text-link" href="#products">Explore the collection <span aria-hidden="true">↗</span></a></div>
  <div class="cover-pictures"><figure class="cover-primary">${picture('C02',{priority:true,sizes:'(max-width:767px) 76vw, 34vw'})}</figure><figure class="cover-secondary">${picture('C19',{sizes:'(max-width:767px) 40vw, 22vw'})}</figure></div></div>
  <div class="editorial">
  <div data-chapter="collage-one">${spreads.slice(0,3).join('')}</div>
