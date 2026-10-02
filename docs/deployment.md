@@ -9,6 +9,8 @@
 - Shared review domain: `staging.wearswing.com`. At that inspection it tracked `codex/sunday-edit`; the automation below replaces that fixed-branch behavior after activation.
 - GitHub integration is connected. PR comments, commit statuses and deployment-status events are enabled.
 
+The project Git connection was reconnected to `Swing-Organization/swing-microsites` on 2026-10-02 after the repository transfer. A manually created Ready deployment is not proof that GitHub received the required `Vercel` commit status; verify that status on the current PR head after a fresh Git push.
+
 Vercel's native Git integration is the deployment trigger. Feature-branch pushes generate Preview deployments and attach them to the PR; opening a PR gives Marketing its review link. Further pushes refresh that PR's preview. Merging the approved PR into main triggers Production automatically. Do not configure a duplicate Actions deploy or run `vercel --prod` for previews.
 
 The `.github/workflows/verify.yml` workflow runs the full verification suite for same-repository PRs. It has read-only GitHub permissions, restores only pinned approved media, and runs Chromium, Firefox, WebKit and source/output audits. Fork PRs do not receive the private media key and require an internal reviewed branch before the campaign can be previewed.
