@@ -1,4 +1,4 @@
-import {escapeHtml as e} from './html.mjs';
+import {escapeHtml as e} from '../../../../shared/render/html.mjs';
 import {BASE,safeLocalPath} from '../../scripts/content-policy.mjs';
 export function renderImage(image,{priority=false,className='',sizes='(max-width: 767px) calc(100vw - 40px), 45vw'}={}){
  if(!image)throw Error('Missing prepared image');

@@ -3,7 +3,8 @@ import {createReadStream} from 'node:fs';
 import {stat,realpath} from 'node:fs/promises';
 import {resolve,join,extname,relative,sep} from 'node:path';
 import {pathToFileURL} from 'node:url';
-import {BASE} from './content-policy.mjs';
+import {readFileSync} from 'node:fs';
+const routes=JSON.parse(readFileSync(new URL('../deployment/campaigns.json',import.meta.url),'utf8')).map(c=>c.route);
 export const HEADERS={
  'Content-Security-Policy':"default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; media-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'",
  'X-Content-Type-Options':'nosniff','Referrer-Policy':'strict-origin-when-cross-origin'
@@ -14,6 +15,8 @@ export function startServer({root='dist',port=4173}={}){
   const finish=(status,message='')=>{res.writeHead(status,HEADERS);res.end(message);};
   if(!['GET','HEAD'].includes(req.method)){finish(405);return;}
   let pathname;try{pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname);}catch{finish(400);return;}
+  const BASE=routes.find(route=>pathname===route.slice(0,-1)||pathname.startsWith(route));
+  if(!BASE){finish(404);return;}
   if(pathname===BASE.slice(0,-1)){res.writeHead(308,{...HEADERS,Location:BASE});res.end();return;}
   if(!pathname.startsWith(BASE)||pathname.includes('\\')||pathname.split('/').some(s=>s==='..'||s.startsWith('.'))){finish(404);return;}
   try{
@@ -35,4 +38,4 @@ export function startServer({root='dist',port=4173}={}){
   }catch{finish(404);}
  }).listen(port,'127.0.0.1');
 }
-if(process.argv[1]&&import.meta.url===pathToFileURL(resolve(process.argv[1])).href){startServer();console.log(`Preview: http://127.0.0.1:4173${BASE}`);}
+if(process.argv[1]&&import.meta.url===pathToFileURL(resolve(process.argv[1])).href){startServer();console.log(`Preview: http://127.0.0.1:4173${routes.join(', ')}`);}

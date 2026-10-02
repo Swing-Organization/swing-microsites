@@ -4,10 +4,10 @@ import {mkdtemp,readFile,rm,access,writeFile,mkdir} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {once} from 'node:events';
-import {escapeHtml} from '../../src/render/html.mjs';
+import {escapeHtml} from '../../../../shared/render/html.mjs';
 import {renderImage} from '../../src/render/image.mjs';
 import {build} from '../../scripts/build.mjs';
-import {startServer} from '../../scripts/serve.mjs';
+import {startServer} from '../../../../scripts/serve.mjs';
 import {loadSite} from '../../scripts/content-policy.mjs';
 test('HTML-like copy becomes inert text and image metadata is escaped',()=>{
  assert.equal(escapeHtml('<script>"x"&</script>'),'&lt;script&gt;&quot;x&quot;&amp;&lt;/script&gt;');
@@ -17,12 +17,12 @@ test('HTML-like copy becomes inert text and image metadata is escaped',()=>{
 test('static build writes only campaign output with resolved image references',async()=>{
  const root=await mkdtemp(join(tmpdir(),'swing-build-'));
  try{
-  const site=await loadSite();await build({outDir:root,site,sourceRoot:'assets-source/sunday-edit'});
+  const site=await loadSite();await build({outDir:root,site,sourceRoot:'campaigns/swing-x-john-montgomery/assets-source'});
   const html=await readFile(join(root,'campaign/johnmontgomery/index.html'),'utf8');
   assert.match(html,/Nothing better than/);assert.ok(!html.includes('drive.google.com'));
   await assert.rejects(access(join(root,'index.html')));
   for(const match of html.matchAll(/(?:src|href)="(\/campaign\/johnmontgomery\/assets\/[^" ]+)"/g))await access(join(root,match[1]));
-  const changed=structuredClone(site);changed.products[0].href='https://evil.example/p';await assert.rejects(build({outDir:root,site:changed,sourceRoot:'assets-source/sunday-edit'}));
+  const changed=structuredClone(site);changed.products[0].href='https://evil.example/p';await assert.rejects(build({outDir:root,site:changed,sourceRoot:'campaigns/swing-x-john-montgomery/assets-source'}));
  }finally{await rm(root,{recursive:true,force:true});}
 });
 test('server isolates campaign routes and supports media ranges',async()=>{

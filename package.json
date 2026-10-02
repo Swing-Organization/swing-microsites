@@ -1,5 +1,5 @@
 {
-  "name": "swing-sunday-edit",
+  "name": "swing-microsites",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -7,9 +7,9 @@
     "node": ">=24 <25"
   },
   "scripts": {
-    "test": "node --test tests/unit/*.test.mjs",
-    "test:unit": "node --test tests/unit/*.test.mjs",
-    "media": "node scripts/prepare-media.mjs",
+    "test": "node --test tests/unit/*.test.mjs campaigns/*/tests/unit/*.test.mjs",
+    "test:unit": "node --test tests/unit/*.test.mjs campaigns/*/tests/unit/*.test.mjs",
+    "media": "node campaigns/swing-x-john-montgomery/scripts/prepare-media.mjs",
     "build": "node scripts/build.mjs",
     "preview": "node scripts/serve.mjs",
     "test:e2e": "playwright test",

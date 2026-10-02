@@ -4,7 +4,7 @@ Reviewed 2026-09-23 for planning. This is a source inspection record, not a clai
 
 ## Evidence and identifiers
 
-The [inventory](../superpowers/reference/2026-09-23-asset-inventory.json) records Drive IDs, ordinary source links, original filenames, byte sizes, SHA-256 checksums, image dimensions, and stable review keys.
+The [inventory](superpowers/reference/2026-09-23-asset-inventory.json) records Drive IDs, ordinary source links, original filenames, byte sizes, SHA-256 checksums, image dimensions, and stable review keys.
 
 All 30 images were downloaded through the connected Drive source and inspected in a contact sheet. Original files remain temporary working copies; implementation must retrieve or retain approved originals in its ignored source directory and verify checksums. No signed download URLs were saved in the repository.
 

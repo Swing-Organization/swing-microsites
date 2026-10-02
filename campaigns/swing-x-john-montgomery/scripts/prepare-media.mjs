@@ -30,8 +30,8 @@ export async function prepareImages(assets,sourceRoot,outputRoot){
  return result;
 }
 if(process.argv[1]&&import.meta.url===pathToFileURL(resolve(process.argv[1])).href){
- const site=await loadSite();const output='assets-source/sunday-edit/prepared';
- const images=await prepareImages(site.assets,'assets-source/sunday-edit',output);
+ const site=await loadSite();const output='campaigns/swing-x-john-montgomery/assets-source/prepared';
+ const images=await prepareImages(site.assets,'campaigns/swing-x-john-montgomery/assets-source',output);
  await writeFile(join(output,'manifest.json'),JSON.stringify(images,null,2));
  console.log(`Prepared ${Object.keys(images).length} approved images`);
 }

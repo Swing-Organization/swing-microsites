@@ -5,10 +5,10 @@ import {createHash} from 'node:crypto';
 const project=new URL('../',import.meta.url);
 const reference=JSON.parse(readFileSync(new URL('docs/superpowers/reference/2026-09-23-asset-inventory.json',project),'utf8'));
 const originals=new Map([...reference.campaign,...reference.products].map(a=>[a.reviewKey,a]));
-const review=JSON.parse(readFileSync(new URL('content/sunday-edit/review.json',project),'utf8'));
+const review=JSON.parse(readFileSync(new URL('content/review.json',project),'utf8'));
 export const BASE='/campaign/johnmontgomery/';
 export async function loadSite(){
- const read=async name=>JSON.parse(await readFile(new URL(`content/sunday-edit/${name}.json`,project),'utf8'));
+ const read=async name=>JSON.parse(await readFile(new URL(`content/${name}.json`,project),'utf8'));
  const [campaign,products,assets,layout]=await Promise.all(['campaign','products','assets','layout'].map(read));
  return {campaign,products,assets,layout,films:campaign.films??[],approvedProductUrls:review.approvedProductUrls};
 }

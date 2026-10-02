@@ -1,9 +1,10 @@
 [
   {
-    "id": "sunday-edit",
+    "id": "swing-x-john-montgomery",
     "route": "/campaign/johnmontgomery/",
-    "sourceDirectory": "assets-source/sunday-edit",
-    "buildModule": "scripts/build.mjs",
-    "auditModule": "scripts/audit-output.mjs"
+    "sourceDirectory": "campaigns/swing-x-john-montgomery/assets-source",
+    "buildModule": "campaigns/swing-x-john-montgomery/scripts/build.mjs",
+    "auditModule": "campaigns/swing-x-john-montgomery/scripts/audit-output.mjs",
+    "mediaDirectory": "assets-source/sunday-edit"
   }
 ]

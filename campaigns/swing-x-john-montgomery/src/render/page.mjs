@@ -1,4 +1,4 @@
-import {escapeHtml as e} from './html.mjs';
+import {escapeHtml as e} from '../../../../shared/render/html.mjs';
 import {renderEditorial} from './editorial.mjs';
 import {renderProducts} from './products.mjs';
 export function renderPage(site,images,resources={}){
