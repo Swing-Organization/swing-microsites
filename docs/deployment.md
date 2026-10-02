@@ -19,7 +19,7 @@ The `.github/workflows/verify.yml` workflow runs the full verification suite for
 
 `vercel.json` uses `npm ci`, `npm run build:deployment`, and the generated `publish/` directory. `media:restore` obtains the immutable media commit declared in `deployment/media-lock.json`; build-time hashes validate each original and derivative. `scripts/deployment/build.mjs` builds and audits every entry in `deployment/campaigns.json`, then packages only those routes without local ownership markers. `publish/` is generated, ignored, and never a source directory.
 
-New campaigns must have separate content/assets and a registry entry with unique `/campaign/<slug>/` route, source directory and build/audit modules. Those modules must export the same build/audit interfaces, produce their campaign in `dist`, and audit that campaign. Do not simply change Sunday's hardcoded route or overwrite its content when adding another campaign. Verify all registered campaigns before publishing: each Vercel deployment replaces the entire project output.
+New campaigns must keep campaign-specific content, source code, tests, and documents under `campaigns/<campaign-name>/` and have a registry entry with unique `/campaign/<slug>/` route, source directory and build/audit modules. Those modules must export the same build/audit interfaces, produce their campaign in `dist`, and audit that campaign. Do not simply change Sunday's hardcoded route or overwrite its content when adding another campaign. Verify all registered campaigns before publishing: each Vercel deployment replaces the entire project output.
 
 The output contains campaign routes only. It does not implement a parent storefront. The custom domains above serve this campaign-only project; any future parent storefront/path integration requires a separate routing decision. Headers apply to `/campaign/*`; no catch-all rewrite to the campaign is used. Search indexing stays disabled until Marketing explicitly changes that requirement.
 
@@ -27,7 +27,7 @@ The output contains campaign routes only. It does not implement a parent storefr
 
 The source store must be private because originals and licensing-sensitive source material do not belong in this public repository. The approved source store is `fernando-espinoza/swing-microsites-media` (private). It is pinned in `deployment/media-lock.json`. To maintain it:
 
-1. Store approved originals and derivatives under `assets-source/<campaign>/`, excluding prepared caches and unrelated files.
+1. Store approved originals and derivatives under `assets-source/<campaign>/` in the private media repository, excluding prepared caches and unrelated files. Set the registry’s `mediaDirectory` to that remote path and `sourceDirectory` to `campaigns/<campaign-name>/assets-source`; restoration copies between these locations.
 2. Commit and push the media, and record the full immutable commit SHA in `deployment/media-lock.json` with the repository owner/name.
 3. Create a repository-scoped **read-only** SSH deploy key. Store the private half as `SOURCE_MEDIA_SSH_KEY` in GitHub Actions and as `SOURCE_MEDIA_SSH_KEY_BASE64` (base64-encoded key) in the Vercel project for Preview and Production only; do not put it in Git, logs, PR text, or this document.
 4. `deployment/github-known-hosts` pins GitHub's public SSH host keys. Review official GitHub key changes rather than disabling host checking.

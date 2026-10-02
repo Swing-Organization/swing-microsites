@@ -7,7 +7,7 @@ const routes=new Set();
 for(const c of campaigns){
  if(!/^\/campaign\/[a-z0-9-]+\/$/.test(c.route)||routes.has(c.route))throw Error('Invalid or duplicate campaign route');
  routes.add(c.route);
- for(const key of ['buildModule','auditModule'])if(!/^scripts\/[a-zA-Z0-9_/-]+\.mjs$/.test(c[key])||c[key].includes('..'))throw Error('Unsafe build module');
+ for(const key of ['buildModule','auditModule'])if(!/^campaigns\/[a-z0-9-]+\/scripts\/[a-zA-Z0-9_-]+\.mjs$/.test(c[key])||c[key].includes('..'))throw Error('Unsafe build module');
  await access(c.sourceDirectory);
  const {build}=await import(pathToFileURL(resolve(c.buildModule)));
  await build();

@@ -22,25 +22,25 @@ Preview: `http://127.0.0.1:4173/campaign/johnmontgomery/`. `npm run preview` bin
 
 ## Original assets and reproducibility
 
-Original media stays out of Git and the public artifact. Existing files are staged in `assets-source/sunday-edit/`. For a fresh checkout:
+Original media stays out of Git and the public artifact. Existing files are staged in `campaigns/swing-x-john-montgomery/assets-source/`. For a fresh checkout:
 
-1. Open the ordinary authenticated Drive URLs in [the source inventory](../superpowers/reference/2026-09-23-asset-inventory.json), or use an authorized Drive connector. Never save a short-lived signed download URL in source control.
-2. Save each used original under its `sourcePath` in `content/sunday-edit/assets.json`. This is C01.jpg through C24.jpg, P01.webp through P06.webp, and V01.mp4 through V06.mp4. Use the manifest's Drive ID, not a filename search, to avoid mismatches.
-3. Preserve the approved V01–V06 derivatives from `assets-source/sunday-edit/film/` in the private handoff bundle, or regenerate them with FFmpeg 7.1 using the exact commands below.
+1. Open the ordinary authenticated Drive URLs in [the source inventory](superpowers/reference/2026-09-23-asset-inventory.json), or use an authorized Drive connector. Never save a short-lived signed download URL in source control.
+2. Save each used original under its `sourcePath` in `campaigns/swing-x-john-montgomery/content/assets.json`. This is C01.jpg through C24.jpg, P01.webp through P06.webp, and V01.mp4 through V06.mp4. Use the manifest's Drive ID, not a filename search, to avoid mismatches.
+3. Preserve the approved V01–V06 derivatives from `campaigns/swing-x-john-montgomery/assets-source/film/` in the private handoff bundle, or regenerate them with FFmpeg 7.1 using the exact commands below.
 4. Run `npm run build`. It verifies original source hashes before generating responsive image variants. A changed or missing original stops the build with its asset ID. Image variants are generated each build from the originals; the optional `npm run media` produces a review set in ignored source storage.
 
 The film uses all of V01 (10.946667 seconds), without audio. Its source is 964×2094 HEVC; its web derivative is 720×1564 H.264, 30fps, yuv420p, CRF 23. Use the local FFmpeg binary as `ffmpeg`:
 
 ```sh
-ffmpeg -hide_banner -loglevel error -i assets-source/sunday-edit/V01.mp4 \
+ffmpeg -hide_banner -loglevel error -i campaigns/swing-x-john-montgomery/assets-source/V01.mp4 \
   -an -vf 'scale=720:-2,fps=30' -c:v libx264 -crf 23 \
   -pix_fmt yuv420p -movflags +faststart /tmp/swing-film.mp4
 ffmpeg -hide_banner -loglevel error -ss 0.5 \
-  -i assets-source/sunday-edit/V01.mp4 -frames:v 1 \
+  -i campaigns/swing-x-john-montgomery/assets-source/V01.mp4 -frames:v 1 \
   -vf 'scale=720:-2' /tmp/swing-poster.jpg
 ```
 
-Compare the resulting SHA-256 values with `srcSha256` and `posterSrcSha256` in campaign.json. Copy verified outputs into `assets-source/sunday-edit/film/` using the basename of the corresponding `src`/`posterSrc`. Do not overwrite an approved hash just to make a different encoder's output pass. A different binary/version may produce different bytes and requires reviewed derivative regeneration. The build checks derivatives against their recorded hashes.
+Compare the resulting SHA-256 values with `srcSha256` and `posterSrcSha256` in campaign.json. Copy verified outputs into `campaigns/swing-x-john-montgomery/assets-source/film/` using the basename of the corresponding `src`/`posterSrc`. Do not overwrite an approved hash just to make a different encoder's output pass. A different binary/version may produce different bytes and requires reviewed derivative regeneration. The build checks derivatives against their recorded hashes.
 
 ## Approved content updates
 

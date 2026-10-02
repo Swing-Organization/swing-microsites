@@ -25,8 +25,8 @@ try{
  if(actual!==config.commit)throw Error('Media commit mismatch');
  for(const campaign of campaigns){
   const dir=campaign.sourceDirectory;
-  if(!/^assets-source\/[a-z0-9-]+$/.test(dir))throw Error('Unsafe campaign media directory');
-  const source=await realpath(join(checkout,dir));const rel=relative(checkoutRoot,source);
+  if(!/^campaigns\/[a-z0-9-]+\/assets-source$/.test(dir)||!/^assets-source\/[a-z0-9-]+$/.test(campaign.mediaDirectory))throw Error('Unsafe campaign media directory');
+  const source=await realpath(join(checkout,campaign.mediaDirectory));const rel=relative(checkoutRoot,source);
   if(rel.startsWith('..')||isAbsolute(rel))throw Error('Media directory escapes checkout');
   await mkdir(resolve(dir),{recursive:true});
   await cp(source,resolve(dir),{recursive:true,dereference:false});

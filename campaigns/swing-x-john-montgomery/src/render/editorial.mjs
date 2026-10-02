@@ -1,4 +1,4 @@
-import {escapeHtml as e} from './html.mjs';
+import {escapeHtml as e} from '../../../../shared/render/html.mjs';
 import {renderImage} from './image.mjs';
 import {BASE,safeLocalPath} from '../../scripts/content-policy.mjs';
 export function renderEditorial(site,images){
