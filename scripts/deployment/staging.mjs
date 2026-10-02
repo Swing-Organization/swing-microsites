@@ -4,8 +4,9 @@ export const config=Object.freeze({
  projectId:'prj_OFCPCvkEYuzaTx6euiLg6iReNAHk',
  teamId:'team_HDbZ1HzOVHGr2pPOMd9mNWc8',
  domain:'staging.wearswing.com',
- // Reserved, nonexistent branch: Vercel must not auto-assign this domain.
+ // Real, locked branch with Git deployments disabled; never merge or deploy it.
  holdingBranch:'codex/staging-managed',
+ holdingCommit:'8e44e8896dd31e9985a0c20a6bf557e9e7dfc981',
 });
 
 export function selectPullRequest(pulls,repositoryId){
@@ -72,9 +73,10 @@ export function createApi({repository,githubToken,vercelToken,fetchImpl=fetch}){
  const domainPath=`/v9/projects/${config.projectId}/domains/${config.domain}`;
  return {
   getRepository:()=>gh(`/repos/${repository}`),
-  async assertHoldingBranchAbsent(){
+  async assertHoldingBranchSafe(){
    const branch=await request('https://api.github.com',`/repos/${repository}/branches/${encodeURIComponent(config.holdingBranch)}`,githubToken,{allow404:true});
-   if(branch)throw Error(`Reserved branch ${config.holdingBranch} exists; remove its use before enabling staging automation`);
+   if(!branch?.protected||branch.name!==config.holdingBranch||branch.commit?.sha!==config.holdingCommit)
+    throw Error(`Staging control branch ${config.holdingBranch} must exist, be protected, and match pinned commit ${config.holdingCommit}`);
   },
   async listPullRequests(){
    const pulls=[];
@@ -109,7 +111,7 @@ if(process.argv[1]&&import.meta.url===pathToFileURL(process.argv[1]).href){
   const {GITHUB_REPOSITORY,GITHUB_TOKEN,VERCEL_STAGING_TOKEN}=process.env;
   if(!GITHUB_TOKEN||!VERCEL_STAGING_TOKEN)throw Error('Configure GitHub Actions secret VERCEL_STAGING_TOKEN before running staging automation');
   const api=createApi({repository:GITHUB_REPOSITORY,githubToken:GITHUB_TOKEN,vercelToken:VERCEL_STAGING_TOKEN});
-  await api.assertHoldingBranchAbsent();
+  await api.assertHoldingBranchSafe();
   const repository=await api.getRepository();
   const result=await reconcileStaging(api,repository.id,{dryRun:process.env.STAGING_DRY_RUN==='true'});
   console.log(JSON.stringify(result));
