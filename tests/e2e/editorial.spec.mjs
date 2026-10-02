@@ -1,7 +1,7 @@
 import {test,expect} from '@playwright/test';
 test('editorial cover leads to three ordered sections and complete campaign photography',async({page})=>{
  await page.goto('/campaign/johnmontgomery/');
- await expect(page.getByRole('heading',{level:1})).toHaveText('Nothing better than a Sunday tee time.');
+ await expect(page.getByRole('heading',{level:1})).toHaveText('Nothing better than a Sunday tea time.');
  expect(await page.locator('main > section').evaluateAll(nodes=>nodes.map(n=>n.id))).toEqual(['campaign','story','products']);
  await expect(page.getByRole('link',{name:'Explore the collection'})).toHaveAttribute('href','#products');
  await expect(page.locator('img[data-asset-id^="C"]')).toHaveCount(18);
