@@ -51,3 +51,12 @@ The check command runs shared and campaign unit tests, builds and audits all reg
 4. Run the full checks, then follow [deployment and release instructions](docs/deployment.md).
 
 Campaign-specific code stays with its campaign. Promote code into `shared/` when it is reusable without importing a particular campaign's content or rules.
+
+## Swing × Sienna Hartley
+
+`campaigns/swing-x-sienna-hartley/` builds **A Round with Sienna** at
+`/campaign/siennahartley/`. Its source manifest was matched by Drive file ID and
+SHA256 to approved media already in the pinned `assets-source/sunday-edit`
+store. The registry restores those exact files into Sienna's own ignored
+`assets-source/`; each campaign has independent content, style and output.
+Shopping destinations are intentionally unset for this review version.

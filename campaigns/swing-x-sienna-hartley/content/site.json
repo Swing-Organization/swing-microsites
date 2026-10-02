@@ -1,0 +1,273 @@
+{
+  "route": "/campaign/siennahartley/",
+  "assets": [
+    {
+      "id": "C01",
+      "driveId": "17-WA0L_kftOMK5isRk-gt0JZNJDhxY3M",
+      "sourceFilename": "IMG_0223.JPG",
+      "sourceSha256": "e0211f14eb457d4d320741be4f0f407c48bd78099854aec3cf99fad577342d26",
+      "kind": "image",
+      "sourcePath": "C01.jpg",
+      "width": 1006,
+      "height": 1468,
+      "alt": "A golfer\u2019s shadow, club and basket of practice balls on the grass.",
+      "approved": true,
+      "sourceFolderId": "1ARxie1nNx2p4cJp_BmUay5cavDdpZJye"
+    },
+    {
+      "id": "C02",
+      "driveId": "1wa3skwfvxaOnLEaVec6XM3rYfmawsEdX",
+      "sourceFilename": "36f1f229022a73a9fa2885e0cfcab96b.jpg",
+      "sourceSha256": "5f0e40fc8a4cb2dbb8014ebaa3c09c676a174a37e078c61da323bc24ec987b37",
+      "kind": "image",
+      "sourcePath": "C02.jpg",
+      "width": 1000,
+      "height": 1500,
+      "alt": "Two women sitting together on the course in green and pale blue golf outfits.",
+      "approved": true,
+      "sourceFolderId": "1ARxie1nNx2p4cJp_BmUay5cavDdpZJye"
+    },
+    {
+      "id": "C03",
+      "driveId": "1SGLDM7p8ix5Fu5qUdxkJWS329iabSczO",
+      "sourceFilename": "60e2b5a8625fa2a21bca7cabf66a1bd1.jpg",
+      "sourceSha256": "5533a49a22853b33f1f285912d5c4302753d34f87177befbf5b952fffd6e9822",
+      "kind": "image",
+      "sourcePath": "C03.jpg",
+      "width": 736,
+      "height": 920,
+      "alt": "Two women relaxing on the clubhouse lawn.",
+      "approved": true,
+      "sourceFolderId": "1ARxie1nNx2p4cJp_BmUay5cavDdpZJye"
+    },
+    {
+      "id": "C09",
+      "driveId": "1z9KQioD5AlhefO4Yv4k8RdG6UH2EJ5lb",
+      "sourceFilename": "9ec6dd33a4e8c328888f91fe033ef5f1.jpg",
+      "sourceSha256": "abb382fbb95a0e58c988527471fbedb9001cf39aef4ca0fe3865c5a77c1b8447",
+      "kind": "image",
+      "sourcePath": "C09.jpg",
+      "width": 1200,
+      "height": 1800,
+      "alt": "A golf cart crossing the green course.",
+      "approved": true,
+      "sourceFolderId": "1ARxie1nNx2p4cJp_BmUay5cavDdpZJye"
+    },
+    {
+      "id": "C14",
+      "driveId": "1z9n_6PPE9LO1CU3DEYq7MTtRCcIhlnWj",
+      "sourceFilename": "1e299d0296da29489bff54bebc32cfa9.jpg",
+      "sourceSha256": "8ee4f39c3488e664ec4ad3f2f6ac7acac7f4aab969b6275d37c784bb8d4b9593",
+      "kind": "image",
+      "sourcePath": "C14.jpg",
+      "width": 736,
+      "height": 1104,
+      "alt": "A woman in a light golf outfit beside a cart.",
+      "approved": true,
+      "sourceFolderId": "1ARxie1nNx2p4cJp_BmUay5cavDdpZJye"
+    },
+    {
+      "id": "C19",
+      "driveId": "1G3KA9pIZJW1ZDfsiXEhs7AOuyfanKCsB",
+      "sourceFilename": "d911064cb0d3a7c11f78c8b274e20b80.jpg",
+      "sourceSha256": "120df0495c9075d0409f916ebacb924826b5afb53dc6e6ae66bd6ea35cbd29f4",
+      "kind": "image",
+      "sourcePath": "C19.jpg",
+      "width": 1158,
+      "height": 1736,
+      "alt": "A woman in a light collared golf outfit beside her golf bag.",
+      "approved": true,
+      "sourceFolderId": "1ARxie1nNx2p4cJp_BmUay5cavDdpZJye"
+    },
+    {
+      "id": "C20",
+      "driveId": "1SNuu8moqvHMWKIM52q6jfQfwBeXffjvX",
+      "sourceFilename": "bc3a881e7a6279fae2c33882ec8f614d.jpg",
+      "sourceSha256": "53429fdcc1ac5d62599f9180e3feb9a8cc797b735ad23b40cab59c3d87019c84",
+      "kind": "image",
+      "sourcePath": "C20.jpg",
+      "width": 736,
+      "height": 920,
+      "alt": "A golfer and her equipment in warm afternoon light.",
+      "approved": true,
+      "sourceFolderId": "1ARxie1nNx2p4cJp_BmUay5cavDdpZJye"
+    },
+    {
+      "id": "C21",
+      "driveId": "10SflAYVjelDjIAGvuNmrDsMD2FaDCPFj",
+      "sourceFilename": "1f1da7c5b845a040e171298d955dce8e.jpg",
+      "sourceSha256": "8390bcdda108a3b4fe3a38246cc9a66af9d4fe28e8809044143782640fbe9efb",
+      "kind": "image",
+      "sourcePath": "C21.jpg",
+      "width": 735,
+      "height": 919,
+      "alt": "A close view of a golfer wearing a light cap.",
+      "approved": true,
+      "sourceFolderId": "1ARxie1nNx2p4cJp_BmUay5cavDdpZJye"
+    },
+    {
+      "id": "P01",
+      "driveId": "1ixd73p4alcqgJx7wOQ7bxDWR0_zQmeDQ",
+      "sourceFilename": "clara dress back.webp",
+      "sourceSha256": "2afb9c6c0b93a15e2eb9d094ecbf169704b7a2fae582c7b8e5b5e108550d2606",
+      "kind": "image",
+      "sourcePath": "P01.webp",
+      "width": 2048,
+      "height": 2560,
+      "alt": "Clara Dress, back view.",
+      "approved": true,
+      "sourceFolderId": "1DfT2CBq7qS6nm3dGIZrO7nh2Qmxe6fyI"
+    },
+    {
+      "id": "P02",
+      "driveId": "1AwLZL6Udh6fm1f5Y6gufuLPsbg9dpChC",
+      "sourceFilename": "clara dress front.webp",
+      "sourceSha256": "fbaa48f8c53541432602ce3692bdd5ff73edcbd3063cc93d74a50c0059a4f175",
+      "kind": "image",
+      "sourcePath": "P02.webp",
+      "width": 2048,
+      "height": 2560,
+      "alt": "Clara Dress, front view.",
+      "approved": true,
+      "sourceFolderId": "1DfT2CBq7qS6nm3dGIZrO7nh2Qmxe6fyI"
+    },
+    {
+      "id": "P03",
+      "driveId": "1qOc8kf80RuMCe-WLuUbUO53zwLmHzhTt",
+      "sourceFilename": "Kin polo back.webp",
+      "sourceSha256": "bb3a48875386ccf7e4394cd6f8b6cbd2a1fc49d19455dec77f3bc71300053f75",
+      "kind": "image",
+      "sourcePath": "P03.webp",
+      "width": 2048,
+      "height": 2560,
+      "alt": "Kin Polo, back view.",
+      "approved": true,
+      "sourceFolderId": "1DfT2CBq7qS6nm3dGIZrO7nh2Qmxe6fyI"
+    },
+    {
+      "id": "P04",
+      "driveId": "1ZaM6O9LIgpG4rAmlID0BuxCBc6FUuxbH",
+      "sourceFilename": "Kin polo front.webp",
+      "sourceSha256": "d0ec942a0bd1847e70f4b096c03272b6fed3d4898e738f1ade54a88e28d7f47c",
+      "kind": "image",
+      "sourcePath": "P04.webp",
+      "width": 2048,
+      "height": 2560,
+      "alt": "Kin Polo, front view.",
+      "approved": true,
+      "sourceFolderId": "1DfT2CBq7qS6nm3dGIZrO7nh2Qmxe6fyI"
+    },
+    {
+      "id": "P05",
+      "driveId": "1OTCQxZ4QYrr51rs8rQScQViOtqqgtkF_",
+      "sourceFilename": "Luisa back.webp",
+      "sourceSha256": "c9edf1d3aadf63a938d62dcdff7b976a2ca73f6e18db3b9d5396060684c589f6",
+      "kind": "image",
+      "sourcePath": "P05.webp",
+      "width": 2048,
+      "height": 2560,
+      "alt": "Luisa Jacket, back view.",
+      "approved": true,
+      "sourceFolderId": "1DfT2CBq7qS6nm3dGIZrO7nh2Qmxe6fyI"
+    },
+    {
+      "id": "P06",
+      "driveId": "152Ng2GYZ0-B1Sq-IChq0SHvYSl03XNBS",
+      "sourceFilename": "Luisa front.webp",
+      "sourceSha256": "417b57a42454ea94b0c8ba49c66a85643dead450f054cbb5b5f3bae36fb9ed7b",
+      "kind": "image",
+      "sourcePath": "P06.webp",
+      "width": 2048,
+      "height": 2560,
+      "alt": "Luisa Jacket, front view.",
+      "approved": true,
+      "sourceFolderId": "1DfT2CBq7qS6nm3dGIZrO7nh2Qmxe6fyI"
+    },
+    {
+      "id": "V01",
+      "driveId": "1pzBER-2XaYPqkwb1jGBy6WRoBS1JImMQ",
+      "sourceFilename": "ScreenRecording_09-23-2026 15-43-09_1.mp4",
+      "sourceSha256": "14e5ad496293f5a1e548e3c14516ce97e2c28eeef256eb197ab08a8af515f691",
+      "kind": "video",
+      "sourcePath": "V01.mp4",
+      "width": 964,
+      "height": 2094,
+      "alt": "A woman in a green polo sitting in a golf cart.",
+      "approved": true,
+      "sourceFolderId": "1ARxie1nNx2p4cJp_BmUay5cavDdpZJye"
+    },
+    {
+      "id": "V03",
+      "driveId": "1ss5g-7R0dL2AJQz7G1x5ZjeQvqxeYH86",
+      "sourceFilename": "ScreenRecording_09-23-2026 15-42-06_1.mp4",
+      "sourceSha256": "aa891c9103a77cf06f07dad903f69496447a4cf27ceaef746de5293daed2e6cd",
+      "kind": "video",
+      "sourcePath": "V03.mp4",
+      "width": 954,
+      "height": 2074,
+      "alt": "A woman relaxing in a chair with a newspaper on the golf course.",
+      "approved": true,
+      "sourceFolderId": "1ARxie1nNx2p4cJp_BmUay5cavDdpZJye"
+    }
+  ],
+  "films": [
+    {
+      "sourceAssetId": "V01",
+      "width": 720,
+      "height": 1564,
+      "posterAlt": "A woman in a green polo seated in a golf cart.",
+      "sourceStartSeconds": 0,
+      "sourceEndSeconds": 10.946667,
+      "captionSrc": null,
+      "src": "assets/V01-film-005a673e726c.mp4",
+      "srcSha256": "005a673e726c6fb0d6e92126dce200a3954285f14f30d97b8e8dce2efa5237a7",
+      "posterSrc": "assets/V01-poster-8819662c222e.jpg",
+      "posterSrcSha256": "8819662c222e5860cc88708cba52337ff89113d4f1ad0ef13189bb793972872b"
+    },
+    {
+      "sourceAssetId": "V03",
+      "width": 720,
+      "height": 1566,
+      "posterAlt": "A woman relaxing with a newspaper on the course.",
+      "sourceStartSeconds": 0,
+      "sourceEndSeconds": 6.84,
+      "captionSrc": null,
+      "src": "assets/V03-film-01d58909d79a.mp4",
+      "srcSha256": "01d58909d79af6c7e0e5f7bd73b86bcaa80627962244446af339681eba63abd1",
+      "posterSrc": "assets/V03-poster-2178d59d990f.jpg",
+      "posterSrcSha256": "2178d59d990fdb86f598ca4fbad946cb1b9b567b8553f5e644726e91847e9909"
+    }
+  ],
+  "products": [
+    {
+      "name": "Kin Polo",
+      "images": [
+        "P04",
+        "P03"
+      ],
+      "url": null,
+      "eyebrow": "A fresh take on a classic",
+      "description": "A relaxed, feminine silhouette in stretch cotton piqu\u00e9. A pigment garment wash, flat-knit collar, ribbed cuffs and hem, and subtle chest embroidery finish the Kin Polo."
+    },
+    {
+      "name": "Clara Dress",
+      "images": [
+        "P02",
+        "P01"
+      ],
+      "url": null,
+      "eyebrow": "A little vintage sport",
+      "description": "A refined knit polo dress with an engineered all-over pattern, rib knit detailing, and a sculpted silhouette. Structured golf styling meets modern femininity."
+    },
+    {
+      "name": "Luisa Jacket",
+      "images": [
+        "P06",
+        "P05"
+      ],
+      "url": null,
+      "eyebrow": "The finishing layer",
+      "description": "A lightweight layer with a refined edge. The Luisa Jacket balances clean structure with functional detail, moving between performance and everyday wear."
+    }
+  ]
+}

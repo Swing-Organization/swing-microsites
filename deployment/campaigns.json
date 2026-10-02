@@ -6,5 +6,13 @@
     "buildModule": "campaigns/swing-x-john-montgomery/scripts/build.mjs",
     "auditModule": "campaigns/swing-x-john-montgomery/scripts/audit-output.mjs",
     "mediaDirectory": "assets-source/sunday-edit"
+  },
+  {
+    "id": "swing-x-sienna-hartley",
+    "route": "/campaign/siennahartley/",
+    "sourceDirectory": "campaigns/swing-x-sienna-hartley/assets-source",
+    "buildModule": "campaigns/swing-x-sienna-hartley/scripts/build.mjs",
+    "auditModule": "campaigns/swing-x-sienna-hartley/scripts/audit-output.mjs",
+    "mediaDirectory": "assets-source/sunday-edit"
   }
 ]
