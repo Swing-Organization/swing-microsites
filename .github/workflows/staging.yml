@@ -1,0 +1,45 @@
+name: Update shared staging
+on:
+  pull_request_target:
+    branches: [main]
+    types: [opened, reopened, synchronize, closed, edited]
+  status:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Report the selected preview without changing staging
+        type: boolean
+        default: false
+permissions:
+  contents: read
+  pull-requests: read
+# A single writer across all PRs; queued jobs always recompute current ownership.
+concurrency:
+  group: shared-staging-domain
+  cancel-in-progress: false
+jobs:
+  staging:
+    if: >-
+      github.ref == 'refs/heads/main' &&
+      (github.event_name == 'workflow_dispatch' ||
+       (vars.STAGING_AUTOMATION_ENABLED == 'true' &&
+        (github.event_name == 'pull_request_target' ||
+         (github.event_name == 'status' && github.event.context == 'Vercel' && github.event.state == 'success'))))
+    environment: staging-automation
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      # Never run PR code with the Vercel credential, including on manual dispatch.
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Reconcile staging with the newest open PR
+        run: node scripts/deployment/staging.mjs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          VERCEL_STAGING_TOKEN: ${{ secrets.VERCEL_STAGING_TOKEN }}
+          STAGING_DRY_RUN: ${{ inputs.dry_run == true && 'true' || 'false' }}
