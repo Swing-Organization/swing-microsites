@@ -1,4 +1,0 @@
-interface:
-  display_name: "Create Microsite"
-  short_description: "Build Swing campaigns with PR previews and approved releases"
-  default_prompt: "Use $create-microsite to build a Swing campaign from my brief and assets, open a PR, and return its staging preview for review."

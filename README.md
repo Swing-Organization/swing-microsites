@@ -8,13 +8,18 @@ Campaign microsites share one repository and deployment. Each campaign owns its 
 | --- | --- |
 | `campaigns/swing-x-john-montgomery/` | Swing × John Montgomery — The Sunday Edit |
 | `shared/` | Reusable HTML escaping and native-film enhancement |
-| `skills/` | Shared microsite workflows and Swing brand reference |
 | `scripts/` | Build/audit dispatch, local preview, and deployment tooling |
 | `deployment/` | Campaign registry, shared pinned private-media source, and SSH host keys |
 | `docs/deployment.md` | Repository-wide hosting and release instructions |
 | `tests/unit/` | Shared deployment tests |
 
 Package dependencies, Playwright configuration, GitHub workflows, and Vercel configuration live at the repository root. Generated `dist/` and `publish/` directories contain separate campaign routes and remain ignored.
+
+## Agent workflows
+
+The installed **Swing Microsites** plugin is the source of truth for reusable skills and brand guidance. Use its `create-microsite` skill when creating a campaign. Skill definitions and their supporting brand files are maintained in the plugin, not duplicated in this repository. If the plugin is unavailable in the current environment, enable it before using that workflow.
+
+This repository remains the source of truth for build, test, and deployment instructions. Before making changes, read this README, any applicable `AGENTS.md`, and `docs/deployment.md`, and inspect the current scripts and configuration.
 
 ## Develop and verify
 
@@ -41,7 +46,7 @@ The check command runs shared and campaign unit tests, builds and audits all reg
 ## Add a campaign
 
 1. Create `campaigns/<campaign-name>/` with its own `content/`, `src/`, `scripts/`, `tests/`, and `docs/` as needed.
-2. Reuse `shared/` utilities and the Swing brand guidance in `skills/create-microsite/references/brand-context.md`.
+2. Reuse `shared/` utilities and the Swing brand guidance bundled in the installed **Swing Microsites** plugin.
 3. Add a unique route and campaign-local build/audit modules to `deployment/campaigns.json`. Set `sourceDirectory` to `campaigns/<campaign-name>/assets-source` and `mediaDirectory` to its directory in the pinned private-media repository.
 4. Run the full checks, then follow [deployment and release instructions](docs/deployment.md).
 

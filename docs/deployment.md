@@ -37,7 +37,7 @@ Do not use a personal GitHub token with broad repository write access as the bui
 
 ## Review and production approval
 
-Use `$create-microsite` for requirements → plan → implementation → PR → preview → feedback → approved release. A copy of the skill is versioned in `skills/create-microsite`; the discoverable personal installation lives under the user's Codex skills directory.
+Use the `create-microsite` skill from the installed **Swing Microsites** plugin for requirements → plan → implementation → PR → preview → feedback → approved release. The plugin owns reusable skills and brand guidance; do not maintain duplicate skill files in this repository. This document, the README, applicable `AGENTS.md` files, and the current scripts/configuration remain authoritative for repository-specific build, test, and deployment procedures.
 
 Before returning a preview, inspect Vercel/GitHub for a successful deployment at the current PR head SHA. Use the actual returned deployment URL plus the campaign path. Confirm Marketing can access it without changing protection silently. Never return localhost or a guessed/stale URL as staging.
 
