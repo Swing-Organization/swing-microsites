@@ -10,3 +10,7 @@
 - Independent review found no important issues. Its output-ownership hardening suggestion was implemented with a regression test.
 
 Launch decisions: shopping destinations intentionally unset. Production requires explicit approval of the reviewed PR SHA. CI and deployed preview status are recorded on the PR.
+
+## Requested copy update — 2026-10-03
+
+Callie requested changing the italic intro header from “Stay for the afternoon.” to “Stay for the aprés?” Exact requested spelling and punctuation retained; existing italic treatment preserved. No other page content changed.
