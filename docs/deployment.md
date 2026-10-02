@@ -86,3 +86,5 @@ To pause automatic updates, set `STAGING_AUTOMATION_ENABLED` to `false` or disab
 ### Shared staging acceptance check
 
 After activation, verify an open PR's exact Ready preview at the shared campaign URL, then update that PR and verify the new head replaces it. Closing the last open PR must retain the last assigned preview. Merging an approved PR separately triggers the native Vercel production build on `main`.
+
+The first live assignment succeeded on 2026-10-02 for verification PR #12; subsequent updates must be selected from that PR's current head, not its original deployment.
