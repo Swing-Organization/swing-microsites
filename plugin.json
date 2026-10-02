@@ -1,0 +1,24 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "swing-microsites",
+  "version": "0.1.0",
+  "description": "Create Swing campaign microsites from approved briefs and assets, with verified PR previews and explicit production approval.",
+  "author": {
+    "name": "Swing Organization"
+  },
+  "repository": "https://github.com/Swing-Organization/swing-microsites",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Swing Microsites",
+        "shortDescription": "Build Swing campaigns from brief to verified preview",
+        "longDescription": "Includes the create-microsite workflow and Swing brand context. Builds and verifies campaign pages, opens pull requests, iterates on feedback, and releases only with explicit approval.",
+        "developerName": "Swing Organization",
+        "category": "Productivity",
+        "defaultPrompt": [
+          "Create a Swing microsite from my creative brief and approved assets."
+        ]
+      }
+    }
+  }
+}
