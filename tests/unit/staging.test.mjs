@@ -107,16 +107,26 @@ test('provider requests paginate PRs and deployments and bind alias writes to th
  assert.equal(requests[0].options.headers.Authorization,'Bearer github-test');
  assert.ok(requests.every(r=>r.options.redirect==='error'));
 });
-test('provider error bodies are not logged and existing reserved branch blocks activation',async()=>{
+test('provider error bodies are not logged',async()=>{
  const options={repository:'Swing-Organization/swing-microsites',githubToken:'github-test',vercelToken:'vercel-test'};
  const api=createApi({...options,fetchImpl:async()=>new Response('sensitive-provider-body',{status:403})});
  await assert.rejects(api.getDomain(),error=>error.message.includes('HTTP 403')&&!error.message.includes('sensitive-provider-body'));
- const reserved=createApi({...options,fetchImpl:async()=>new Response('{"name":"codex/staging-managed"}')});
- await assert.rejects(reserved.assertHoldingBranchAbsent(),/Reserved branch/);
+
 });
 
 test('provider readyState and omitted preview target are supported while custom environments are rejected',()=>{
  const preview=deployment(2,{state:undefined,readyState:'READY',target:undefined});
  assert.equal(selectDeployment([preview],pr(2),1383780309)?.uid,'dpl_2');
  assert.equal(selectDeployment([deployment(2,{customEnvironment:{id:'env_other'}})],pr(2),1383780309),null);
+});
+
+
+test('control branch must exist, be protected, and match the pinned non-deploying commit',async()=>{
+ const options={repository:'Swing-Organization/swing-microsites',githubToken:'github-test',vercelToken:'vercel-test'};
+ const branch={name:config.holdingBranch,protected:true,commit:{sha:config.holdingCommit}};
+ const apiFor=(body,status=200)=>createApi({...options,fetchImpl:async()=>new Response(JSON.stringify(body),{status})});
+ await apiFor(branch).assertHoldingBranchSafe();
+ for(const invalid of [null,{...branch,protected:false},{...branch,commit:{sha:'changed'}}]){
+  await assert.rejects(apiFor(invalid,invalid?200:404).assertHoldingBranchSafe(),/Staging control branch/);
+ }
 });
