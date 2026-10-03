@@ -13,7 +13,9 @@ The project Git connection was reconnected to `Swing-Organization/swing-microsit
 
 Vercel's native Git integration is the deployment trigger. Feature-branch pushes generate Preview deployments and attach them to the PR; opening a PR gives Marketing its review link. Further pushes refresh that PR's preview. Merging the approved PR into main triggers Production automatically. Do not configure a duplicate Actions deploy or run `vercel --prod` for previews.
 
-The `.github/workflows/verify.yml` workflow runs the full verification suite for same-repository PRs. It has read-only GitHub permissions, restores only pinned approved media, and runs Chromium, Firefox, WebKit and source/output audits. Fork PRs do not receive the private media key and require an internal reviewed branch before the campaign can be previewed.
+The `.github/workflows/verify.yml` workflow verifies same-repository PRs. It has read-only GitHub permissions and restores only pinned approved media. Every run executes all shared/campaign unit tests and builds, audits and packages every registered campaign once. Browser checks run Chromium, Firefox and WebKit for affected campaigns when every changed file is in a registered campaign's `content/` or `src/` directory. Shared files, campaign build scripts, tests, registry/dependency/workflow changes, unknown paths, empty diffs or unavailable comparison history retain full browser coverage. Rename detection is disabled so both old and new paths count. Campaign source must stay independent of other campaigns; shared dependencies belong in `shared/`.
+
+CI uses the official versioned Playwright container with browsers and system dependencies already installed. Keep its version aligned with `@playwright/test` in `package-lock.json` when upgrading. Container download time still counts toward setup; compare total job duration rather than assuming removal of the install step means zero setup cost. The required check name remains `Build and verify microsites`. Fork PRs do not receive the private media key and require an internal reviewed branch before the campaign can be previewed.
 
 ## Build contract
 

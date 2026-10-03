@@ -43,6 +43,8 @@ npm run check
 
 The check command runs shared and campaign unit tests, builds and audits all registered campaigns, and runs campaign browser tests. See the [John Montgomery campaign guide](campaigns/swing-x-john-montgomery/README.md) for campaign-specific details.
 
+GitHub CI runs all unit tests, then uses `scripts/deployment/build.mjs` to build, audit and package all routes in one pass. It does not repeat `npm run check` and then rebuild the same output. Browser tests use the preinstalled engines in the versioned Playwright container. For changes confined to campaign `content/` and `src/`, only affected campaigns need browser tests; all other changes keep full coverage. `node scripts/ci-browser-tests.mjs` defaults to every campaign unless a valid `CI_BASE_SHA` comparison establishes the narrower scope. `npm run check` remains the explicit full local check.
+
 ## Add a campaign
 
 1. Create `campaigns/<campaign-name>/` with its own `content/`, `src/`, `scripts/`, `tests/`, and `docs/` as needed.
