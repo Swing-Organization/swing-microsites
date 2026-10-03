@@ -13,11 +13,16 @@ jobs:
     name: Build and verify microsites
     if: github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
+    # Keep this version aligned with @playwright/test in package-lock.json.
+    container:
+      image: mcr.microsoft.com/playwright:v1.63.0-noble
+      options: --user 1001
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
@@ -27,6 +32,11 @@ jobs:
         run: npm run media:restore
         env:
           SOURCE_MEDIA_SSH_KEY: ${{ secrets.SOURCE_MEDIA_SSH_KEY }}
-      - run: npx playwright install --with-deps chromium firefox webkit
-      - run: npm run check
-      - run: node scripts/deployment/build.mjs
+      - name: Verify shared and campaign units
+        run: npm run test:unit
+      - name: Build, audit and package every campaign once
+        run: node scripts/deployment/build.mjs
+      - name: Verify affected campaigns in all browsers
+        run: node scripts/ci-browser-tests.mjs
+        env:
+          CI_BASE_SHA: ${{ github.event.pull_request.base.sha }}
