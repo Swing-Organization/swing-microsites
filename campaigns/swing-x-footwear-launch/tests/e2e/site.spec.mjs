@@ -15,7 +15,7 @@ test('reduced motion, manual pause and failed film preserve visitor control',asy
  await page.emulateMedia({reducedMotion:'reduce'});await page.goto(route);const video=page.locator('video').first();await video.scrollIntoViewIfNeeded();await expect.poll(()=>video.evaluate(v=>v.paused)).toBe(true);
  await page.emulateMedia({reducedMotion:'no-preference'});await expect.poll(()=>video.evaluate(v=>!v.paused)).toBe(true);
  await video.evaluate(v=>v.pause());await page.locator('h1').scrollIntoViewIfNeeded();await video.scrollIntoViewIfNeeded();await expect.poll(()=>video.evaluate(v=>v.paused)).toBe(true);
- await page.route('**/*.mp4',route=>route.fulfill({status:404,body:'Not found'}));await video.evaluate(v=>{v.src=v.src+'?failure-test';v.load();});await expect(video).toBeHidden();await expect(page.locator('[data-film-fallback]').first()).toBeVisible();await expect(page.getByRole('status').first()).toHaveText('Film unavailable');
+ await page.route(/\.mp4(?:\?|$)/,route=>route.fulfill({status:404,body:'Not found'}));await video.evaluate(v=>{v.src=v.src+'?failure-test';v.preload='auto';v.load();v.play().catch(()=>{});});await expect(video).toBeHidden();await expect(page.locator('[data-film-fallback]').first()).toBeVisible();await expect(page.getByRole('status').first()).toHaveText('Film unavailable');
 });
 test('content and anchors work with JavaScript disabled',async({browser})=>{
  const context=await browser.newContext({javaScriptEnabled:false});const page=await context.newPage();await page.goto('http://127.0.0.1:4173'+route);await expect(page.getByRole('heading',{name:'Kin Polo'})).toBeVisible();await page.getByRole('link',{name:'Explore Swing Tennis'}).click();await expect(page).toHaveURL(/#collection$/);await context.close();
