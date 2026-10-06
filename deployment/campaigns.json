@@ -14,5 +14,13 @@
     "buildModule": "campaigns/swing-x-sienna-hartley/scripts/build.mjs",
     "auditModule": "campaigns/swing-x-sienna-hartley/scripts/audit-output.mjs",
     "mediaDirectory": "assets-source/sunday-edit"
+  },
+  {
+    "id": "swing-x-footwear-launch",
+    "route": "/campaign/footwear-launch/",
+    "sourceDirectory": "campaigns/swing-x-footwear-launch/assets-source",
+    "buildModule": "campaigns/swing-x-footwear-launch/scripts/build.mjs",
+    "auditModule": "campaigns/swing-x-footwear-launch/scripts/audit-output.mjs",
+    "mediaDirectory": "assets-source/sunday-edit"
   }
 ]

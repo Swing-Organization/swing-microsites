@@ -1,0 +1,174 @@
+{
+  "route": "/campaign/footwear-launch/",
+  "assets": [
+    {
+      "id": "C02",
+      "driveId": "1wa3skwfvxaOnLEaVec6XM3rYfmawsEdX",
+      "sourceFilename": "36f1f229022a73a9fa2885e0cfcab96b.jpg",
+      "sourceSha256": "5f0e40fc8a4cb2dbb8014ebaa3c09c676a174a37e078c61da323bc24ec987b37",
+      "kind": "image",
+      "sourcePath": "C02.jpg",
+      "width": 1000,
+      "height": 1500,
+      "alt": "Two women sitting together on the course in green and pale blue golf outfits.",
+      "approved": true,
+      "sourceFolderId": "1ARxie1nNx2p4cJp_BmUay5cavDdpZJye",
+      "approvalNote": "Existing golf imagery intentionally approved as test substitution by marketer, 2026-10-06."
+    },
+    {
+      "id": "C03",
+      "driveId": "1SGLDM7p8ix5Fu5qUdxkJWS329iabSczO",
+      "sourceFilename": "60e2b5a8625fa2a21bca7cabf66a1bd1.jpg",
+      "sourceSha256": "5533a49a22853b33f1f285912d5c4302753d34f87177befbf5b952fffd6e9822",
+      "kind": "image",
+      "sourcePath": "C03.jpg",
+      "width": 736,
+      "height": 920,
+      "alt": "Two women relaxing on the clubhouse lawn.",
+      "approved": true,
+      "sourceFolderId": "1ARxie1nNx2p4cJp_BmUay5cavDdpZJye",
+      "approvalNote": "Existing golf imagery intentionally approved as test substitution by marketer, 2026-10-06."
+    },
+    {
+      "id": "C20",
+      "driveId": "1SNuu8moqvHMWKIM52q6jfQfwBeXffjvX",
+      "sourceFilename": "bc3a881e7a6279fae2c33882ec8f614d.jpg",
+      "sourceSha256": "53429fdcc1ac5d62599f9180e3feb9a8cc797b735ad23b40cab59c3d87019c84",
+      "kind": "image",
+      "sourcePath": "C20.jpg",
+      "width": 736,
+      "height": 920,
+      "alt": "A golfer and her equipment in warm afternoon light.",
+      "approved": true,
+      "sourceFolderId": "1ARxie1nNx2p4cJp_BmUay5cavDdpZJye",
+      "approvalNote": "Existing golf imagery intentionally approved as test substitution by marketer, 2026-10-06."
+    },
+    {
+      "id": "P02",
+      "driveId": "1AwLZL6Udh6fm1f5Y6gufuLPsbg9dpChC",
+      "sourceFilename": "clara dress front.webp",
+      "sourceSha256": "fbaa48f8c53541432602ce3692bdd5ff73edcbd3063cc93d74a50c0059a4f175",
+      "kind": "image",
+      "sourcePath": "P02.webp",
+      "width": 2048,
+      "height": 2560,
+      "alt": "Clara Dress, front view.",
+      "approved": true,
+      "sourceFolderId": "1DfT2CBq7qS6nm3dGIZrO7nh2Qmxe6fyI",
+      "approvalNote": "Existing golf imagery intentionally approved as test substitution by marketer, 2026-10-06."
+    },
+    {
+      "id": "P04",
+      "driveId": "1ZaM6O9LIgpG4rAmlID0BuxCBc6FUuxbH",
+      "sourceFilename": "Kin polo front.webp",
+      "sourceSha256": "d0ec942a0bd1847e70f4b096c03272b6fed3d4898e738f1ade54a88e28d7f47c",
+      "kind": "image",
+      "sourcePath": "P04.webp",
+      "width": 2048,
+      "height": 2560,
+      "alt": "Kin Polo, front view.",
+      "approved": true,
+      "sourceFolderId": "1DfT2CBq7qS6nm3dGIZrO7nh2Qmxe6fyI",
+      "approvalNote": "Existing golf imagery intentionally approved as test substitution by marketer, 2026-10-06."
+    },
+    {
+      "id": "P06",
+      "driveId": "152Ng2GYZ0-B1Sq-IChq0SHvYSl03XNBS",
+      "sourceFilename": "Luisa front.webp",
+      "sourceSha256": "417b57a42454ea94b0c8ba49c66a85643dead450f054cbb5b5f3bae36fb9ed7b",
+      "kind": "image",
+      "sourcePath": "P06.webp",
+      "width": 2048,
+      "height": 2560,
+      "alt": "Luisa Jacket, front view.",
+      "approved": true,
+      "sourceFolderId": "1DfT2CBq7qS6nm3dGIZrO7nh2Qmxe6fyI",
+      "approvalNote": "Existing golf imagery intentionally approved as test substitution by marketer, 2026-10-06."
+    },
+    {
+      "id": "V01",
+      "driveId": "1pzBER-2XaYPqkwb1jGBy6WRoBS1JImMQ",
+      "sourceFilename": "ScreenRecording_09-23-2026 15-43-09_1.mp4",
+      "sourceSha256": "14e5ad496293f5a1e548e3c14516ce97e2c28eeef256eb197ab08a8af515f691",
+      "kind": "video",
+      "sourcePath": "V01.mp4",
+      "width": 964,
+      "height": 2094,
+      "alt": "A woman in a green polo sitting in a golf cart.",
+      "approved": true,
+      "sourceFolderId": "1ARxie1nNx2p4cJp_BmUay5cavDdpZJye",
+      "approvalNote": "Existing golf imagery intentionally approved as test substitution by marketer, 2026-10-06."
+    },
+    {
+      "id": "V03",
+      "driveId": "1ss5g-7R0dL2AJQz7G1x5ZjeQvqxeYH86",
+      "sourceFilename": "ScreenRecording_09-23-2026 15-42-06_1.mp4",
+      "sourceSha256": "aa891c9103a77cf06f07dad903f69496447a4cf27ceaef746de5293daed2e6cd",
+      "kind": "video",
+      "sourcePath": "V03.mp4",
+      "width": 954,
+      "height": 2074,
+      "alt": "A woman relaxing in a chair with a newspaper on the golf course.",
+      "approved": true,
+      "sourceFolderId": "1ARxie1nNx2p4cJp_BmUay5cavDdpZJye",
+      "approvalNote": "Existing golf imagery intentionally approved as test substitution by marketer, 2026-10-06."
+    }
+  ],
+  "films": [
+    {
+      "sourceAssetId": "V01",
+      "width": 720,
+      "height": 1564,
+      "posterAlt": "A woman in a green polo seated in a golf cart.",
+      "sourceStartSeconds": 0,
+      "sourceEndSeconds": 10.946667,
+      "captionSrc": null,
+      "src": "assets/V01-film-005a673e726c.mp4",
+      "srcSha256": "005a673e726c6fb0d6e92126dce200a3954285f14f30d97b8e8dce2efa5237a7",
+      "posterSrc": "assets/V01-poster-8819662c222e.jpg",
+      "posterSrcSha256": "8819662c222e5860cc88708cba52337ff89113d4f1ad0ef13189bb793972872b"
+    },
+    {
+      "sourceAssetId": "V03",
+      "width": 720,
+      "height": 1566,
+      "posterAlt": "A woman relaxing with a newspaper on the course.",
+      "sourceStartSeconds": 0,
+      "sourceEndSeconds": 6.84,
+      "captionSrc": null,
+      "src": "assets/V03-film-01d58909d79a.mp4",
+      "srcSha256": "01d58909d79af6c7e0e5f7bd73b86bcaa80627962244446af339681eba63abd1",
+      "posterSrc": "assets/V03-poster-2178d59d990f.jpg",
+      "posterSrcSha256": "2178d59d990fdb86f598ca4fbad946cb1b9b567b8553f5e644726e91847e9909"
+    }
+  ],
+  "products": [
+    {
+      "name": "Kin Polo",
+      "images": [
+        "P04"
+      ],
+      "url": null,
+      "eyebrow": "A fresh take on a classic",
+      "description": "A relaxed, feminine silhouette in stretch cotton piqu\u00e9. A pigment garment wash, flat-knit collar, ribbed cuffs and hem, and subtle chest embroidery finish the Kin Polo."
+    },
+    {
+      "name": "Clara Dress",
+      "images": [
+        "P02"
+      ],
+      "url": null,
+      "eyebrow": "A little vintage sport",
+      "description": "A refined knit polo dress with an engineered all-over pattern, rib knit detailing, and a sculpted silhouette. Structured golf styling meets modern femininity."
+    },
+    {
+      "name": "Luisa Jacket",
+      "images": [
+        "P06"
+      ],
+      "url": null,
+      "eyebrow": "The finishing layer",
+      "description": "A lightweight layer with a refined edge, clean structure, and functional detail."
+    }
+  ]
+}
