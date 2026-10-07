@@ -19,7 +19,7 @@ test('every supplied original is presented, with equal two-view product stories 
  assert.deepEqual(all.filter(n=>attrs(n)['data-asset']).map(n=>attrs(n)['data-asset']).sort(),['C1','C2','C3','C4','C5','C6','C7','C8','C9','C10','C11','C12','C13','C14','C15','P1','P2','P3','P4','P5','P6','V1','V2','V3','V4','V5'].sort());
  const products=all.filter(n=>n.tagName==='article');assert.equal(products.length,3);
  for(const p of products){assert.equal(walk(p).filter(n=>n.tagName==='img').length,2);assert.equal(walk(p).filter(n=>['a','button'].includes(n.tagName)).length,0);}
- assert.equal(all.filter(n=>n.tagName==='h1').length,1);assert.match(html.replace(/<[^>]*>/g,''),/A new court, the same swing\./);
+ assert.equal(all.filter(n=>n.tagName==='h1').length,1);assert.match(html.replace(/<[^>]*>/g,''),/The same swing, a new Sunday set/);
  for(const n of all.filter(n=>n.tagName==='a'))assert.ok(attrs(n).href.startsWith('#'));
  assert.equal(all.filter(n=>attrs(n)['data-shopping']!==undefined).length>=7,true);
  assert.doesNotMatch(html,/https?:|\$\d|patterned|knit polo dress/i);

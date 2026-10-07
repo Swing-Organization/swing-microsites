@@ -15,3 +15,7 @@
 
 Shopping destinations are intentionally absent for the preview. Supply and verify product and collection URLs, then obtain explicit production approval for the updated preview SHA. This change neither merges nor deploys production.
 
+
+## Headline update — 2026-10-07
+
+User override: replace the original brief headline with “The same swing, a new Sunday set” exactly, without a final period. Updated the cover, matching metadata/content record and existing wording checks. Retained the editorial typography with line breaks that keep “Sunday set” together. Affected campaign build and four unit checks pass; exact wording and overflow checked in Chromium at 320, 390, 768 and 1440px, with desktop/mobile screenshots inspected. Required CI and the new current-head preview are verified separately before handoff.

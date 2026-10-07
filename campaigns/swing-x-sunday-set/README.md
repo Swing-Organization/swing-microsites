@@ -5,7 +5,7 @@ Standalone Swing tennis editorial at **/campaign/sunday-set/**.
 ## Sources and creative decisions
 The campaign folder, complete brief and product sheet were read on 2026-10-07. IDs, URLs, current modified times, original filenames, visual descriptions and SHA256 checksums are recorded in content/site.json. All 15 campaign photos, five films and six product views are included. Video posters were extracted from the supplied films using the installed browser; no generated or external media is used.
 
-The brief’s headline and warm ivory / court green / faded blue direction are preserved. Georgia and Arial are disclosed system-font fallbacks; the page requests no external fonts. Editorial captions are original campaign copy within the brief’s open supporting-copy direction.
+The brief’s warm ivory / court green / faded blue direction is preserved. Georgia and Arial are disclosed system-font fallbacks; the page requests no external fonts. Editorial captions are original campaign copy within the brief’s open supporting-copy direction.
 
 The current Clara front/back images supersede the stale file discrepancy in the brief. The user explicitly approved the green sleeveless images with the name “Clara Dress” only, omitting the conflicting patterned-polo description. Luisa’s back image is matched to the actual file despite the product sheet’s “Lusia” typo.
 

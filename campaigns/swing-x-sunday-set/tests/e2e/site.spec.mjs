@@ -3,7 +3,7 @@ import AxeBuilder from '@axe-core/playwright';
 const route='/campaign/sunday-set/';
 for(const width of [390,1440])test(`all media and equal product views are usable at ${width}px`,async({page})=>{
  await page.setViewportSize({width,height:900});await page.emulateMedia({reducedMotion:'reduce'});await page.goto(route);
- await expect(page.locator('h1')).toHaveText('A new court, the same swing.');
+ await expect(page.locator('h1')).toHaveText('The same swing, a new Sunday set');
  await expect(page.locator('[data-asset]')).toHaveCount(26);await expect(page.locator('article')).toHaveCount(3);
  for(const product of await page.locator('article').all()){await expect(product.locator('img')).toHaveCount(2);await expect(product.locator('a,button')).toHaveCount(0);}
  for(const img of await page.locator('img:not([hidden])').all()){await img.scrollIntoViewIfNeeded();await expect.poll(()=>img.evaluate(i=>i.complete&&i.naturalWidth>0)).toBe(true);}
