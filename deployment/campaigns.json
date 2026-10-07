@@ -22,13 +22,5 @@
     "buildModule": "campaigns/swing-x-footwear-launch/scripts/build.mjs",
     "auditModule": "campaigns/swing-x-footwear-launch/scripts/audit-output.mjs",
     "mediaDirectory": "assets-source/sunday-edit"
-  },
-  {
-    "id": "swing-x-sunday-set",
-    "route": "/campaign/sunday-set/",
-    "sourceDirectory": "campaigns/swing-x-sunday-set/assets-source",
-    "buildModule": "campaigns/swing-x-sunday-set/scripts/build.mjs",
-    "auditModule": "campaigns/swing-x-sunday-set/scripts/audit-output.mjs",
-    "mediaDirectory": "assets-source/sunday-set"
   }
 ]
