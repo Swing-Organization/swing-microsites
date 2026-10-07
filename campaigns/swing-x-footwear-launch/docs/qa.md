@@ -12,3 +12,6 @@
 - All six new campaign browser tests pass locally, including axe WCAG checks, no-JS anchors, keyboard focus, reduced motion, manual pause, actual network-error fallback, and mobile stacking.
 - Initial CI: 33/33 unit tests; all three campaign builds/audits passed; 99/102 browser tests passed. The three failures were the same test fixture: the MP4 interception glob did not match its query string and preload=none did not trigger a request. Corrected fixture to match query parameters and explicitly request playback; no production-code change needed.
 - Preview returned HTTP 200 without authentication, HTML identical to local output, expected CSP/noindex/nosniff headers. Final head CI and preview checks recorded in PR handoff.
+
+## 2026-10-07 headline update
+Marketer requested “Your Sunday Starts Here.” Replaced hero headline and matching browser title; preserved all CSS, media, layout, supporting copy and interactions. Updated existing headline assertions. This explicit copy override supersedes the brief headline; Drive brief unchanged.
