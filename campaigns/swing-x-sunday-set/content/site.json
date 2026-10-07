@@ -1,0 +1,431 @@
+{
+  "title": "The Sunday Set",
+  "headline": "The same swing, a new Sunday set",
+  "route": "/campaign/sunday-set/",
+  "provenance": {
+    "folder": "https://drive.google.com/drive/folders/1IS4kSsWxZzdMNj-HsxMhYee-APO1KGJk",
+    "brief": "https://docs.google.com/document/d/13Q-3-O8M-DFk8HlW4C_vi8P-IpNA8oy9OKU3rD5PcXQ/edit",
+    "briefModified": "2026-10-07T10:59:08.115Z",
+    "productSheet": "https://docs.google.com/spreadsheets/d/1kKCnXtUDlU_VEBs2j1LEolzLpyqJsu0IZulyivKRQX4/edit",
+    "inspected": "2026-10-07",
+    "approval": "User requested build from this campaign; all 26 originals required by brief. User confirmed latest green Clara images and name only for preview.",
+    "exceptions": [
+      "Clara description omitted by explicit user instruction: supplied green sleeveless dress differs from sheet.",
+      "Lusia back.webp in sheet resolves to Luisa back.webp by actual filename and inspection.",
+      "User explicitly approved production without product-page links on 2026-10-07. Product and collection destinations remain null; shopping prompts remain plain text."
+    ]
+  },
+  "collectionUrl": null,
+  "products": [
+    {
+      "id": "kin",
+      "name": "Kin Polo",
+      "caption": "A classic, with a little personality.",
+      "description": "Stretch cotton piqué. Relaxed silhouette.",
+      "images": [
+        "P6",
+        "P5"
+      ],
+      "url": null
+    },
+    {
+      "id": "clara",
+      "name": "Clara Dress",
+      "caption": "",
+      "description": "",
+      "images": [
+        "P2",
+        "P1"
+      ],
+      "url": null
+    },
+    {
+      "id": "luisa",
+      "name": "Luisa Jacket",
+      "caption": "For wherever the afternoon goes.",
+      "description": "Lightweight protection. Clean structure.",
+      "images": [
+        "P4",
+        "P3"
+      ],
+      "url": null
+    }
+  ],
+  "assets": [
+    {
+      "id": "V1",
+      "kind": "video",
+      "sourcePath": "V1.mp4",
+      "sourceSha256": "477c612edf2a6393e97548cbbb24a31ab3aefa56ce11b98034e1d5ccd95ab631",
+      "sourceFileName": "pinterest-774759942161566908.mp4",
+      "driveId": "1J6pn-BbcMzwfcjkFzH0gOimuSRU5c8bv",
+      "sourceUrl": "https://drive.google.com/file/d/1J6pn-BbcMzwfcjkFzH0gOimuSRU5c8bv/view?usp=drivesdk",
+      "modifiedTime": "2026-10-06T10:06:33.087Z",
+      "width": 720,
+      "height": 1280,
+      "duration": 5.533333,
+      "alt": "A player with a racket on a blue tennis court."
+    },
+    {
+      "id": "V2",
+      "kind": "video",
+      "sourcePath": "V2.mp4",
+      "sourceSha256": "c478db4b7a150c9c14ff8a003f585d7419ac9fd6428579258fc367e6d7b74d40",
+      "sourceFileName": "pinterest-834925218462601955.mp4",
+      "driveId": "1L11g8177_v9VuHyZjkCeVdBUzm_t3jUk",
+      "sourceUrl": "https://drive.google.com/file/d/1L11g8177_v9VuHyZjkCeVdBUzm_t3jUk/view?usp=drivesdk",
+      "modifiedTime": "2026-10-06T10:06:25.950Z",
+      "width": 720,
+      "height": 1280,
+      "duration": 36.247007,
+      "alt": "A player in a white dress tosses a tennis ball beside the net."
+    },
+    {
+      "id": "V3",
+      "kind": "video",
+      "sourcePath": "V3.mp4",
+      "sourceSha256": "63a2717a06bf605a8a789bcb0cc580562c066d31629485d891e8294b2e4f9eef",
+      "sourceFileName": "pinterest-68749662341.mp4",
+      "driveId": "142mIfxWPlRZsbxaLngAUPszhIsiWqBhn",
+      "sourceUrl": "https://drive.google.com/file/d/142mIfxWPlRZsbxaLngAUPszhIsiWqBhn/view?usp=drivesdk",
+      "modifiedTime": "2026-10-06T10:06:21.222Z",
+      "width": 720,
+      "height": 1280,
+      "duration": 19.203991,
+      "alt": "Two friends walk together across a green tennis court."
+    },
+    {
+      "id": "V4",
+      "kind": "video",
+      "sourcePath": "V4.mp4",
+      "sourceSha256": "5460a2a670b6fb6796682af4db38ff44e7a88e9dca53c0cebba183cd9b56fbbc",
+      "sourceFileName": "pinterest-1086704585106788484.mp4",
+      "driveId": "1h1m8y5OQptI6PYy6OiTibUcQ9HFBno6h",
+      "sourceUrl": "https://drive.google.com/file/d/1h1m8y5OQptI6PYy6OiTibUcQ9HFBno6h/view?usp=drivesdk",
+      "modifiedTime": "2026-10-06T10:06:15.837Z",
+      "width": 720,
+      "height": 1280,
+      "duration": 4.297007,
+      "alt": "A woman relaxes outdoors with a newspaper."
+    },
+    {
+      "id": "V5",
+      "kind": "video",
+      "sourcePath": "V5.mp4",
+      "sourceSha256": "03a32c1907de841ea77de4eb93ba13075d8a391011b5435581fbc8c043b0e462",
+      "sourceFileName": "pinterest-video.mp4",
+      "driveId": "1-p6KS9l2s7KNl01hN-TmHcfTRF0dGYRo",
+      "sourceUrl": "https://drive.google.com/file/d/1-p6KS9l2s7KNl01hN-TmHcfTRF0dGYRo/view?usp=drivesdk",
+      "modifiedTime": "2026-10-06T10:01:28.474Z",
+      "width": 720,
+      "height": 1280,
+      "duration": 13.366667,
+      "alt": "A player in white prepares a tennis shot."
+    },
+    {
+      "id": "C1",
+      "kind": "image",
+      "sourcePath": "C1.jpg",
+      "sourceSha256": "df3117134ce8a61d6ba64cd44072e608722249814197f1ed1ea087303e659c92",
+      "sourceFileName": "7353c06615128d0d799c1bc36a1c94a3.jpg",
+      "driveId": "1SkNiNCh1mLNJb080kUgU08GnGYPycSdd",
+      "sourceUrl": "https://drive.google.com/file/d/1SkNiNCh1mLNJb080kUgU08GnGYPycSdd/view?usp=drivesdk",
+      "modifiedTime": "2026-10-06T09:59:13.668Z",
+      "width": 563,
+      "height": 752,
+      "alt": "Pleated blue skirt and dark green sweatshirt on a white courtside chair."
+    },
+    {
+      "id": "C2",
+      "kind": "image",
+      "sourcePath": "C2.jpg",
+      "sourceSha256": "89c48cdaded9139716bad3577be1adb32e863ef345966c75adb1beceb5bc5677",
+      "sourceFileName": "fa9817dba8b747374232f3158f8ff4c5.jpg",
+      "driveId": "1lyoYshpPONr87_gpM85drIQZJZbCwvOR",
+      "sourceUrl": "https://drive.google.com/file/d/1lyoYshpPONr87_gpM85drIQZJZbCwvOR/view?usp=drivesdk",
+      "modifiedTime": "2026-10-06T09:58:52.639Z",
+      "width": 736,
+      "height": 1181,
+      "alt": "A player takes a drinks break beside her tennis bag."
+    },
+    {
+      "id": "C3",
+      "kind": "image",
+      "sourcePath": "C3.jpg",
+      "sourceSha256": "592e2a7436c2e2c8d1fa103e644cbf9eb95cc1aeeddb22ba2aa6aa38434d721c",
+      "sourceFileName": "e77af30e5fdf38f67b4bff490afa9dec.jpg",
+      "driveId": "13lshC542_PPwtYTErGS_KcusFxuvIIDk",
+      "sourceUrl": "https://drive.google.com/file/d/13lshC542_PPwtYTErGS_KcusFxuvIIDk/view?usp=drivesdk",
+      "modifiedTime": "2026-10-06T09:58:43.397Z",
+      "width": 1200,
+      "height": 1500,
+      "alt": "White tennis shoes and socks in motion on a green court."
+    },
+    {
+      "id": "C4",
+      "kind": "image",
+      "sourcePath": "C4.jpg",
+      "sourceSha256": "16297c725ee2322852be682874e8296a86b05bf3f6e4d51f713ae0396b31155d",
+      "sourceFileName": "32defca59a3f08652615c42e0212d5d7.jpg",
+      "driveId": "1W9u1_qtS4T9tw5SlMZF54_7AWfZJHxdJ",
+      "sourceUrl": "https://drive.google.com/file/d/1W9u1_qtS4T9tw5SlMZF54_7AWfZJHxdJ/view?usp=drivesdk",
+      "modifiedTime": "2026-10-06T09:58:33.244Z",
+      "width": 736,
+      "height": 920,
+      "alt": "Two friends relax in white tennis outfits beside a clay court."
+    },
+    {
+      "id": "C5",
+      "kind": "image",
+      "sourcePath": "C5.jpg",
+      "sourceSha256": "18648c76f6bb1a6787781e21bdf5db53cbf2b82c8232b5de08360c31d37b694b",
+      "sourceFileName": "926a5aaf418f022723e8d7d28bdfad5b.jpg",
+      "driveId": "1uixgEcmxBk7zq8y4UEETRcnsP65cwqvX",
+      "sourceUrl": "https://drive.google.com/file/d/1uixgEcmxBk7zq8y4UEETRcnsP65cwqvX/view?usp=drivesdk",
+      "modifiedTime": "2026-10-06T09:58:22.909Z",
+      "width": 816,
+      "height": 1088,
+      "alt": "Two doubles partners cross a sunlit tennis court at golden hour."
+    },
+    {
+      "id": "C6",
+      "kind": "image",
+      "sourcePath": "C6.jpg",
+      "sourceSha256": "d3bfb5ad3dc564ff518718697a3b3fe630a1963519b83b0c8b4de5b10b98873b",
+      "sourceFileName": "db4b62f0ee9118738e68a813a41490c9.jpg",
+      "driveId": "1ZDHeL8f8FThzh1WyGu8BWefvh0HNzjgW",
+      "sourceUrl": "https://drive.google.com/file/d/1ZDHeL8f8FThzh1WyGu8BWefvh0HNzjgW/view?usp=drivesdk",
+      "modifiedTime": "2026-10-06T09:58:17.136Z",
+      "width": 736,
+      "height": 981,
+      "alt": "A player in a cream knit top relaxes on a sunlit club terrace."
+    },
+    {
+      "id": "C7",
+      "kind": "image",
+      "sourcePath": "C7.jpg",
+      "sourceSha256": "ccfeb7e5255530ee9994c27b292fe719af8415286738ee9ef0d2432a8bea626e",
+      "sourceFileName": "63d7a1bcf3666d6cff018e923546a658.jpg",
+      "driveId": "1eg75zzqYoX6TGSZ--fYMP9RyshFn2RsT",
+      "sourceUrl": "https://drive.google.com/file/d/1eg75zzqYoX6TGSZ--fYMP9RyshFn2RsT/view?usp=drivesdk",
+      "modifiedTime": "2026-10-06T09:58:05.226Z",
+      "width": 640,
+      "height": 853,
+      "alt": "A woman in vintage white tennis knitwear sits among green stadium seats."
+    },
+    {
+      "id": "C8",
+      "kind": "image",
+      "sourcePath": "C8.jpg",
+      "sourceSha256": "193ba5f86c4e2dd5af7ebb1fd90323732338c35ff4984b0d9beb1dfcefcb0904",
+      "sourceFileName": "3e27f79168409888bb04eae271d44ed4.jpg",
+      "driveId": "1C4L3I1Ns9SZHtY_WAJEtYfZRIicCzW3t",
+      "sourceUrl": "https://drive.google.com/file/d/1C4L3I1Ns9SZHtY_WAJEtYfZRIicCzW3t/view?usp=drivesdk",
+      "modifiedTime": "2026-10-06T09:57:49.737Z",
+      "width": 736,
+      "height": 911,
+      "alt": "Two friends in white tennis outfits chat at the net."
+    },
+    {
+      "id": "C9",
+      "kind": "image",
+      "sourcePath": "C9.jpg",
+      "sourceSha256": "1ad8ec75c72bfcc53f1795de973c6e8ea1607822c727bc528d165caae806dc76",
+      "sourceFileName": "05eb8f8066397c399dc0fd12db52342c.jpg",
+      "driveId": "1cM8AqjnRAhN1SfbsLSe3udiK80z_IZHW",
+      "sourceUrl": "https://drive.google.com/file/d/1cM8AqjnRAhN1SfbsLSe3udiK80z_IZHW/view?usp=drivesdk",
+      "modifiedTime": "2026-10-06T09:57:42.416Z",
+      "width": 474,
+      "height": 710,
+      "alt": "Two players with tennis bags walk onto a blue court."
+    },
+    {
+      "id": "C10",
+      "kind": "image",
+      "sourcePath": "C10.jpg",
+      "sourceSha256": "e7a9eeedf06e8bc38c548056b88a0b5e75758b6a8fcca5339b9400c07721ffa0",
+      "sourceFileName": "f19bfecd38ac21a7f07a9c31c9c3eafb.jpg",
+      "driveId": "1_AkL-8ztng3Rt6PeplSq-j9NjtWvbp5L",
+      "sourceUrl": "https://drive.google.com/file/d/1_AkL-8ztng3Rt6PeplSq-j9NjtWvbp5L/view?usp=drivesdk",
+      "modifiedTime": "2026-10-06T09:57:33.566Z",
+      "width": 736,
+      "height": 980,
+      "alt": "Four friends meet at the net after doubles."
+    },
+    {
+      "id": "C11",
+      "kind": "image",
+      "sourcePath": "C11.jpg",
+      "sourceSha256": "ad0ac47da6ce3bec8bd98f4352e2bcb3b87749c84f5c28de7e50980c2b6c3737",
+      "sourceFileName": "05c029b06d0687ce31efddb218940bf8.jpg",
+      "driveId": "11ysRF2B0ipdmdjSVVAWM51R65mfZ4sK6",
+      "sourceUrl": "https://drive.google.com/file/d/11ysRF2B0ipdmdjSVVAWM51R65mfZ4sK6/view?usp=drivesdk",
+      "modifiedTime": "2026-10-06T09:57:21.927Z",
+      "width": 736,
+      "height": 1019,
+      "alt": "A woman in a white tennis outfit stands beside a golf cart."
+    },
+    {
+      "id": "C12",
+      "kind": "image",
+      "sourcePath": "C12.jpg",
+      "sourceSha256": "1e1f96329eadabc7f6e1c7e5c30f9615c407d6d51a6d3aeaed15b349d3eb8c66",
+      "sourceFileName": "8c1fa2c38f9d121cd2c394d85ce3988b.jpg",
+      "driveId": "12M1B8i3cDmdGDUjoe8Xwq9_UwtzP5p28",
+      "sourceUrl": "https://drive.google.com/file/d/12M1B8i3cDmdGDUjoe8Xwq9_UwtzP5p28/view?usp=drivesdk",
+      "modifiedTime": "2026-10-06T09:56:55.984Z",
+      "width": 736,
+      "height": 920,
+      "alt": "Two doubles partners high-five on a green court."
+    },
+    {
+      "id": "C13",
+      "kind": "image",
+      "sourcePath": "C13.jpg",
+      "sourceSha256": "380b4445ff0f02e38ddcf9fcda8de6c184bfc3cc8914d72125955cc84a70042d",
+      "sourceFileName": "f63a85b7f150e550e5cd68d2045f21b7.jpg",
+      "driveId": "1rwJFlOplKr7FrJp71jS4mMU6xqHEAwLH",
+      "sourceUrl": "https://drive.google.com/file/d/1rwJFlOplKr7FrJp71jS4mMU6xqHEAwLH/view?usp=drivesdk",
+      "modifiedTime": "2026-10-06T09:56:43.877Z",
+      "width": 1200,
+      "height": 1809,
+      "alt": "A player in a navy top and white skirt prepares her shot."
+    },
+    {
+      "id": "C14",
+      "kind": "image",
+      "sourcePath": "C14.jpg",
+      "sourceSha256": "38d107f0c901d8bc01301a355394393aa1bb6205d3e4e9bb35837eda04f73367",
+      "sourceFileName": "38baad85c3e6dcde1e8978cd857f7db7.jpg",
+      "driveId": "1afwAeUAqMpPSIzy0K0XzxWy9NKa2obzk",
+      "sourceUrl": "https://drive.google.com/file/d/1afwAeUAqMpPSIzy0K0XzxWy9NKa2obzk/view?usp=drivesdk",
+      "modifiedTime": "2026-10-06T09:56:00.625Z",
+      "width": 736,
+      "height": 1104,
+      "alt": "A table set for a sunny afternoon on a garden tennis court."
+    },
+    {
+      "id": "C15",
+      "kind": "image",
+      "sourcePath": "C15.jpg",
+      "sourceSha256": "308fac1e79c4a519b8ae8815e32a0f657f34968cc242017f7e13ebc7488b12e5",
+      "sourceFileName": "115c7a50a2d3b71858906285afdd8e81.jpg",
+      "driveId": "1hPkT48365YZ5A8NjG7ZGvt1URkwgzhEl",
+      "sourceUrl": "https://drive.google.com/file/d/1hPkT48365YZ5A8NjG7ZGvt1URkwgzhEl/view?usp=drivesdk",
+      "modifiedTime": "2026-10-06T09:55:51.397Z",
+      "width": 735,
+      "height": 974,
+      "alt": "A racket, tennis ball and white shoes against an orange clay court."
+    },
+    {
+      "id": "P1",
+      "kind": "image",
+      "sourcePath": "P1.webp",
+      "sourceSha256": "56e8e571dba7f8c3749999ac3059beb445913e7a6ddf724060961e2baa1bc1a8",
+      "sourceFileName": "clara dress back.webp",
+      "driveId": "1ea4nugPoWrmBvtgxtnlwVmy0jowtTGyd",
+      "sourceUrl": "https://drive.google.com/file/d/1ea4nugPoWrmBvtgxtnlwVmy0jowtTGyd/view?usp=drivesdk",
+      "modifiedTime": "2026-10-07T11:01:09.338Z",
+      "width": 967,
+      "height": 1450,
+      "alt": "Clara Dress, back view: green sleeveless dress with white trim."
+    },
+    {
+      "id": "P2",
+      "kind": "image",
+      "sourcePath": "P2.webp",
+      "sourceSha256": "5d1f329d97dc99cfcf805f2376abbf34a45b6a78852ad26da94e935f8a9d822a",
+      "sourceFileName": "clara dress front.webp",
+      "driveId": "1wMg4PGwLzoTWQzqdJIo8Px94MCh1k1pD",
+      "sourceUrl": "https://drive.google.com/file/d/1wMg4PGwLzoTWQzqdJIo8Px94MCh1k1pD/view?usp=drivesdk",
+      "modifiedTime": "2026-10-07T11:00:57.548Z",
+      "width": 967,
+      "height": 1450,
+      "alt": "Clara Dress, front view: green sleeveless dress with white trim."
+    },
+    {
+      "id": "P3",
+      "kind": "image",
+      "sourcePath": "P3.webp",
+      "sourceSha256": "ad14dce7dbbf3cccde79e564958a310900c33ae547266f39220d1de706b203fc",
+      "sourceFileName": "Luisa back.webp",
+      "driveId": "11zIXPSCeQRUvFMKDwLEwAypSQQRn9mum",
+      "sourceUrl": "https://drive.google.com/file/d/11zIXPSCeQRUvFMKDwLEwAypSQQRn9mum/view?usp=drivesdk",
+      "modifiedTime": "2026-10-06T09:53:12.013Z",
+      "width": 1057,
+      "height": 1292,
+      "alt": "Luisa Jacket, back view: navy and blue colour-block jacket."
+    },
+    {
+      "id": "P4",
+      "kind": "image",
+      "sourcePath": "P4.webp",
+      "sourceSha256": "3fb216eaa2a5d8848dae45e2bc1feb63844852f54c2b3cabc56f73af951584f4",
+      "sourceFileName": "Luisa front.webp",
+      "driveId": "1mzzvgw8JIDgDc8Ao-qUAXIhFnTGyJ2Cm",
+      "sourceUrl": "https://drive.google.com/file/d/1mzzvgw8JIDgDc8Ao-qUAXIhFnTGyJ2Cm/view?usp=drivesdk",
+      "modifiedTime": "2026-10-06T09:53:05.075Z",
+      "width": 1057,
+      "height": 1292,
+      "alt": "Luisa Jacket, front view: navy and blue jacket with a white chest stripe."
+    },
+    {
+      "id": "P5",
+      "kind": "image",
+      "sourcePath": "P5.webp",
+      "sourceSha256": "1a8ba3582764a4a4ad45b93330912c960fa54d7f7e5a16bbb1f5133148af5435",
+      "sourceFileName": "Kin polo back.webp",
+      "driveId": "1TPJB2bA-gZi6xQq3erS_JLheYR9mhiEU",
+      "sourceUrl": "https://drive.google.com/file/d/1TPJB2bA-gZi6xQq3erS_JLheYR9mhiEU/view?usp=drivesdk",
+      "modifiedTime": "2026-10-06T09:51:18.069Z",
+      "width": 1057,
+      "height": 1292,
+      "alt": "Kin Polo, back view: cream short-sleeve polo with dark trim."
+    },
+    {
+      "id": "P6",
+      "kind": "image",
+      "sourcePath": "P6.webp",
+      "sourceSha256": "a1dcdca81224c39e0622451a1b35ce22813568844904c869f66dc5205fbeb843",
+      "sourceFileName": "Kin polo front.webp",
+      "driveId": "1Gcp64NT7la6Wf5uxkebtOPL0JQz2ingL",
+      "sourceUrl": "https://drive.google.com/file/d/1Gcp64NT7la6Wf5uxkebtOPL0JQz2ingL/view?usp=drivesdk",
+      "modifiedTime": "2026-10-06T09:51:01.848Z",
+      "width": 1057,
+      "height": 1292,
+      "alt": "Kin Polo, front view: cream short-sleeve polo with dark trim."
+    }
+  ],
+  "films": [
+    {
+      "id": "V1",
+      "posterSource": "V1-poster.webp",
+      "posterSha256": "2ccc4addb72361151e87c6cde5a15b9f187e3f0c28833b80ca05538e2c41f8eb",
+      "posterAlt": "A player with a racket on a blue tennis court."
+    },
+    {
+      "id": "V2",
+      "posterSource": "V2-poster.webp",
+      "posterSha256": "e405c861ee591ef409c200d5e1819a6f7aedef83cf846377edd444aacae4e30a",
+      "posterAlt": "A player in a white dress tosses a tennis ball beside the net."
+    },
+    {
+      "id": "V3",
+      "posterSource": "V3-poster.webp",
+      "posterSha256": "75e069a600e014ddffb58b7b46cf1ca2181e68eb1a87c02e74c410aecac6f094",
+      "posterAlt": "Two friends walk together across a green tennis court."
+    },
+    {
+      "id": "V4",
+      "posterSource": "V4-poster.webp",
+      "posterSha256": "e48088d2bd257bc04802286ac986eaa9a0cf791f0b8667b3a7bbbd8bfe18834b",
+      "posterAlt": "A woman relaxes outdoors with a newspaper."
+    },
+    {
+      "id": "V5",
+      "posterSource": "V5-poster.webp",
+      "posterSha256": "e7bf320dbb1d9e9334c416ea6552ac7a4bb49a323a90af76ef8c65e5ce0bf771",
+      "posterAlt": "A player in white prepares a tennis shot."
+    }
+  ]
+}
