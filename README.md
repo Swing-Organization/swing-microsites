@@ -43,8 +43,6 @@ npm run check
 
 The check command runs shared and campaign unit tests, builds and audits all registered campaigns, and runs campaign browser tests. See the [John Montgomery campaign guide](campaigns/swing-x-john-montgomery/README.md) for campaign-specific details.
 
-On macOS, WebKit keyboard tests use Option–Tab to traverse links, matching the browser’s native link-navigation shortcut without changing system preferences. Other browser/platform combinations use Tab.
-
 GitHub CI runs all unit tests, then uses `scripts/deployment/build.mjs` to build, audit and package all routes in one pass. It does not repeat `npm run check` and then rebuild the same output. Browser tests use the preinstalled engines in the versioned Playwright container. For changes confined to campaign `content/` and `src/`, only affected campaigns need browser tests; all other changes keep full coverage. `node scripts/ci-browser-tests.mjs` defaults to every campaign unless a valid `CI_BASE_SHA` comparison establishes the narrower scope. `npm run check` remains the explicit full local check.
 
 ## Add a campaign
@@ -64,12 +62,3 @@ SHA256 to approved media already in the pinned `assets-source/sunday-edit`
 store. The registry restores those exact files into Sienna's own ignored
 `assets-source/`; each campaign has independent content, style and output.
 Shopping destinations are intentionally unset for this review version.
-
-## Swing × Sunday Set
-
-`campaigns/swing-x-sunday-set/` builds **The Sunday Set** at `/campaign/sunday-set/`.
-Its 15 campaign photographs, five films, and six product views are restored from
-`assets-source/sunday-set` in the pinned private media repository. All three
-previous campaign routes remain in the same deployment. Shopping placements are
-intentionally inactive for preview; destinations are required before launch.
-See the campaign README for source decisions and verification.
