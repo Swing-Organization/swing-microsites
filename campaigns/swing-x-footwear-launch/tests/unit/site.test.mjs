@@ -8,7 +8,7 @@ function nodes(html){const out=[];function walk(n){out.push(n);for(const c of n.
 test('five-part tennis story has display-only products and working collection targets',async()=>{
  const html=await rendered();const all=nodes(html);const attrs=n=>Object.fromEntries((n.attrs??[]).map(a=>[a.name,a.value]));
  assert.equal(all.filter(n=>n.tagName==='section').length,5);
- const text=html.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ');assert.match(text,/Your Sunday Starts Here\./);
+ const text=html.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ');assert.match(text,/This is a test/);
  assert.match(text,/Meet Swing Tennis\. Your afternoon starts here\./);
  assert.equal(all.filter(n=>n.tagName==='article').length,3);
  assert.equal(all.filter(n=>n.tagName==='a'&&attrs(n).href==='#collection').length,2);

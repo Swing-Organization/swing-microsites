@@ -15,3 +15,7 @@
 
 ## 2026-10-07 headline update
 Marketer requested “Your Sunday Starts Here.” Replaced hero headline and matching browser title; preserved all CSS, media, layout, supporting copy and interactions. Updated existing headline assertions. This explicit copy override supersedes the brief headline; Drive brief unchanged.
+
+## 2026-10-07 test header update
+Marketer requested the exact headline “This is a test”. Updated the hero heading and matching browser title, retaining the existing two-line italic treatment. This copy override supersedes the previous headline; the Drive brief remains unchanged. Updated existing headline assertions.
+Validation: campaign build, checksum-verified source media, output audit, three campaign unit tests and all six Chromium campaign browser tests passed. Desktop (1440px) and mobile (390px) headline layout reviewed. Required CI and current-head staging are checked in the PR handoff.
