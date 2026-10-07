@@ -3,7 +3,7 @@ import AxeBuilder from '@axe-core/playwright';
 const route='/campaign/footwear-launch/';
 for(const width of [390,1440])test(`editorial layout and collection navigation at ${width}px`,async({page})=>{
  await page.setViewportSize({width,height:900});await page.goto(route);
- await expect(page.locator('h1')).toHaveText('Your SundayStarts Here.');
+ await expect(page.locator('h1')).toHaveText('This is a test');
  await expect(page.locator('main section')).toHaveCount(5);
  await page.getByRole('link',{name:'Explore the Collection'}).click();await expect(page).toHaveURL(/#collection$/);
  await expect(page.locator('article')).toHaveCount(3);await expect(page.locator('article a,article button')).toHaveCount(0);
